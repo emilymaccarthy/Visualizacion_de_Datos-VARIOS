@@ -1,38 +1,25 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: white;
+    background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    padding: 0%;
+}
+
+#bodytext {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0% 5% 0% 5%;
 }
 
 #header {
-    background: rgba(255, 255, 255, 0.542);
+    background: rgb(255, 255, 255);
     max-width: 100%;
     padding-top: 10px;
     padding-bottom: 1px;
     padding-left: 5px;
     padding-right: 5px;
     
-}
-
-#news {
-    font-family: 'Yeseva One', serif;
-    font-weight: bolder;
-    text-align: center;
-    font-size: larger;    
-}
-
-#date {
-    color: rgb(0, 0, 0);
-    text-align: right;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-bottom: 0;
 }
 
 .sections {
@@ -63,21 +50,21 @@ body {
     grid-column-gap: 10px;
 }
 
-#img {
+#imagen1 {
     width: auto;
     height: 30rem;
-    align-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.imgs {
-    width: auto;
-    height: 30rem;
+    display: block;
+    margin: 0 auto;
 }
 
 
-h1, h3 {
+.images img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#titulo, h3 {
     font-family: Optima;
     width: auto;
     margin-right: auto;
@@ -87,10 +74,26 @@ h1, h3 {
     
 }
 
-h2{
-    
-    font-family: Optima;
-    width: auto;
-    font-variant: small-caps;
+#principal {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
 }
 
+h2{ 
+    font-family: 'Cinzel Decorative', cursive;
+    width: auto;
+    font-variant: small-caps;
+    padding-left: 5%;
+}
+
+#news {
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    font-variant: small-caps;
+    padding: auto;
+    font-size: 70px;    
+    margin: 0%;
+}
