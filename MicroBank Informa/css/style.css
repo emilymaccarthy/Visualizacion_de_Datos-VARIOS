@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&display=swap');
+
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#header {
+    font-family: 'Lora', serif;
+    max-width: 100%;
+    padding-top: 7px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+#news {
+    padding: 2px;
+    text-align: center;
+    font-stretch: ultra-expanded;
+    font-size: 90px;    
+    margin: 0%;
+    letter-spacing: 4px;
+}
+
+
+.sections {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(180, 13, 71) ;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+    font-weight: 100;
+    word-spacing: 40px;
+}
+
+#bodytext {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 2;
+
+}
+
+#iframecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#titulo, h3 {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-variant: small-caps;
+    
+}
+
+#principal {
+    align-content: center;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+h2{ 
+    width: auto;
+    font-family: 'Lora', serif;
+    padding-left: 13%;
+    
+}
+
