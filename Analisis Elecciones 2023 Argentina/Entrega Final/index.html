@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="view-transition" content="same-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VD | Resultados de elecciones 2023 </title>
+
+    <!-- Reinicio de estilos -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Estilos para editar -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Scripts transiciones páginas -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body data-barba="wrapper">
+    <div class="container" data-barba="container" data-barba-namespace="home">
+      <div id="slide0">
+        <video
+        id="videoApertura"
+        src="media\video.mp4"
+        autoplay
+        muted
+        loop
+        preload="auto"
+        ></video>
+
+        <div id="texto">
+          <div id="headerApertura">
+            <h1>Voto en blanco: La quinta fuerza más votada en CABA</h1>
+          </div>
+
+          <div id="textoApertura">
+            <p>Edición Elecciones PASO 2023</p>
+            <br>
+            <p>Por Emily Mac Carthy y Pilar Sabatté</p>
+          </div>
+        </div>
+      </div>
+        
+
+    </div>
+      <!-- Botones -->
+      <a id="prev_btn" class="prevBtn block" href="page_7.html">
+        <div class="flecha izq"></div>
+      </a>
+      <a id="next_btn" class="nextBtn" href="page_1.html">
+        <div class="flecha der"></div>
+      </a>
+    </div>
+  </body>
+</html>

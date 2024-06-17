@@ -1,0 +1,317 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+}
+
+/* La tipografia default */
+body {
+  /* font-family: sans-serif; */
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+/* Contenedor de los slides */
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+/* Botones previo y siguiente */
+.prevBtn, .nextBtn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 50vh;
+  opacity: 0.6;
+  background-color: lightgray;
+  transition: opacity 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1000;
+}
+.prevBtn{
+  left: 30px;
+}
+.nextBtn{
+  right: 30px;
+}
+/* Botones bloqueados */
+.prevBtn.block, .nextBtn.block{
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: transparent;
+}
+/* Botones con mouse over */
+.prevBtn:hover, .nextBtn:hover{
+  opacity: 1;
+}
+/* Las flechas dentro de los botones */
+.flecha{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+}
+.flecha.izq {
+  left: 55%;
+  transform: translateX(-55%) translateY(-45%) rotate(45deg);
+}
+.flecha.der {
+  right: 60%;
+  transform: translateX(55%) translateY(-45%) rotate(-135deg);
+}
+/* Fin botones */
+
+h1 {
+  text-align: center;
+}
+
+.bajada {
+  font-size: 22px;
+}
+p {
+  text-align: center;
+}
+
+
+/* Apertura: positioning */
+
+
+#slide0 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+#slide0 #headerApertura {
+  position: relative;
+  padding: 50px 15px;
+  width: 1500px;
+  height: fit-content;
+  
+}
+
+#slide0 #headerApertura h1 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+#slide0 #textoApertura {
+  position: relative;
+  padding: 10px;
+  height: fit-content;
+  margin: 0;
+  border-radius: 5px;  
+}
+
+
+#slide0 #textoApertura p {
+  margin-bottom: 40px;
+  text-align: center;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Principio animacion de envelope*/
+#slide0 #mail{
+  height: 150px;
+  width: 350px;
+  position: relative;
+  margin: auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide0 .envelope{
+  background-color: rgb(107, 107, 107);
+  height: 150px;
+  width: 270px;
+  position: relative;
+  left: 45px;
+  top: 0px;
+}
+
+#slide0 .paper{
+  background-color: white;
+  height: 150px;
+  width: 250px;
+  position: relative;
+  left: 10px;
+}
+
+#slide0 #inner1{
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid rgb(164, 164, 164);
+  border-right: 270px solid transparent;
+  position: relative;
+  bottom: 150px;
+}
+
+#slide0 #inner2{
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid rgb(156, 156, 156);
+  border-left: 270px solid transparent;
+}
+
+#slide0 .cover{
+  width: 0;
+  height: 0;
+  border-top: 75px solid rgb(149, 149, 149);
+  border-right:135px solid transparent;
+  border-left:135px solid transparent;
+  position: relative;
+  bottom: 300px
+}
+
+#slide0 .envelope:hover .cover{
+  transform: rotateX(180deg);
+  z-index: -1;
+}
+
+#slide0 .envelope:hover .paper{
+  transform: translateY(-50px);
+}
+/*Fin animacion de envelope*/
+
+
+
+/* Slide 1: uso de grid */
+#slide1 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+
+}
+
+#slide1 .header {
+  margin-bottom: 20px;
+}
+
+
+#slide1 img {
+  width: 400px;
+  height:auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slide 2: uso de flex */
+
+#slide2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+#slide2 .header {
+  margin-bottom: 10px;
+}
+
+#slide2 #mapayref{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 90%;
+  padding: 10px;;
+  place-items: center;
+}
+
+#slide2 #Dwmapcomunas {
+  filter: grayscale(100%);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  margin: 0 auto;
+  
+  width: 450px;
+}
+
+#slide2 img{
+  width: 250px;
+  height: auto;
+}
+
+#slide2 #comunasreftext{
+  width: 100px;
+}
+
+
+/* Slide 3*/
+
+#slide3 {
+  background: linear-gradient(90deg, rgb(75, 10, 85),rgb(255, 255, 255));
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#slide3 .header {
+  position: relative;
+  padding: 5px 15px;
+  width: 1000px;
+  height: 150px;
+  
+}
+
+#slide3 #Dwvotos{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#slide3 #votoblanco{
+  filter: grayscale(100%);
+}
+
+#slide4 {
+  background: linear-gradient(90deg, rgb(75, 10, 85),rgb(255, 255, 255));
+}

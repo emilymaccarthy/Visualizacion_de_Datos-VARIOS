@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* La tipografia default */
+body {
+  /* font-family: sans-serif; */
+  background-color: #a5d8f3;
+}
+
+/* Contenedor de los slides */
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+/* Botones previo y siguiente */
+.prevBtn, .nextBtn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 50vh;
+  opacity: 0.6;
+  background-color: lightgray;
+  transition: opacity 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1000;
+}
+.prevBtn{
+  left: 30px;
+}
+.nextBtn{
+  right: 30px;
+}
+/* Botones bloqueados */
+.prevBtn.block, .nextBtn.block{
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: transparent;
+}
+/* Botones con mouse over */
+.prevBtn:hover, .nextBtn:hover{
+  opacity: 1;
+}
+/* Las flechas dentro de los botones */
+.flecha{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+}
+.flecha.izq {
+  left: 55%;
+  transform: translateX(-55%) translateY(-45%) rotate(45deg);
+}
+.flecha.der {
+  right: 60%;
+  transform: translateX(55%) translateY(-45%) rotate(-135deg);
+}
+/* Fin botones */
+
+
+
+/* Apertura: positioning */
+
+/* Slide 1: uso de grid */
+
+/* Slide 2: uso de flex */
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="view-transition" content="same-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VD | Ejemplo Slider</title>
+
+    <!-- Reinicio de estilos -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Estilos para editar -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Scripts transiciones páginas -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body data-barba="wrapper">
+    <div class="container" data-barba="container" data-barba-namespace="home">
+      <div id="slide3">
+        <div class="header">
+          <div id="blanco">
+            <h1 id="txtb">Blanco</h1> 
+          </div>
+
+          <div> <h2>vs.</h2> </div>
+          
+          <div id="violeta">
+            <h1 id="txtv">Violeta</h1>
+          </div>
+        </div>
+        
+        <div id="Dwvotos">
+            <div id="votoblanco" >
+              <iframe title="Porcentaje de votos en blanco" aria-label="Mapa" id="datawrapper-chart-VQIGh" src="https://datawrapper.dwcdn.net/VQIGh/7/" scrolling="no" frameborder="0" style="border: none;" width="500" height="533" data-external="1"></iframe>
+            </div>
+            <div id="votoMilei"> 
+              <iframe title="Votos para Milei en CABA" aria-label="Mapa" id="datawrapper-chart-GnqIb" src="https://datawrapper.dwcdn.net/GnqIb/8/" scrolling="no" frameborder="0" style="border: none;" width="500" height="533" data-external="1"></iframe>
+            </div>
+        </div>
+
+        <p >
+          Correlación a la vista: en dos de las comunas donde hubo más votos en blanco se alcanzó el porcentaje de voto más alto para Milei.
+        </p>
+
+        
+    </div>
+      <!-- Botones -->
+      <a id="prev_btn" class="prevBtn" href="page_2.html">
+        <div class="flecha izq"></div>
+      </a>
+      <a id="next_btn" class="nextBtn" href="page_4.html">
+        <div class="flecha der"></div>
+      </a>
+    </div>
+  </body>
+</html>

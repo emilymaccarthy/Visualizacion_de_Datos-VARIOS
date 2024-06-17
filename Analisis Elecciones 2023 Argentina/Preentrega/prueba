@@ -1,0 +1,7 @@
+<!-- Barra externa (gris)  -->
+<div style="width: 150px; height: 15px; background-color: #ddd; position: relative">
+<!-- Barra interna (color condicional)  --> 
+  <div style="position: absolute; top: 0; left: 0; bottom: 0; width: {{ porcentaje * 100 / 27.49 }}%; background-color: #8e00f6 "></div>
+  <div style="position: absolute; top: 0; left: 10px; bottom: 0;>{{ porcentaje }}%"></div>
+
+</div>
